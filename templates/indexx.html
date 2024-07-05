@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dataframe a HTML</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pasar de DataFrame a Html</h1>
+        {% for table in tables %}
+        <div class="tabla_responsive"></div>
+        {{table}}
+    </div>
+        {% endfor %}
+
+</body>
+</html>
