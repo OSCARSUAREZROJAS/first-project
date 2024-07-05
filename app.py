@@ -14,6 +14,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     db = datos()
+    #njksdjndfdsljkh
     df_agrupado = db.groupby('vernacularName')['individualCount'].sum().reset_index()
     df_html = df_agrupado.to_html(classes='data',header='true')
     return render_template('indexx.html',tables=[df_html])
@@ -21,6 +22,6 @@ def index():
 
 #Handler: manejo de Errores
 @app.errorhandler(404)
+#comentario de prueba
 def error_404(error):
     return render_template('404.html', error=error)
-
